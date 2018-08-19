@@ -10,16 +10,22 @@
 
 #include <stdio.h>
 #include <GL/glut.h>
+#include "ShapeFactory.h"
+#include "Coordinate.h"
+#include "Colors.h"
+#include<list>
+#include<iostream>
 
 void display(void);
 void init (void);
 void keyboard(unsigned char key, int x, int y);
 
+using namespace std;
 int main(int argc, char** argv)
 {
    glutInit(&argc, argv);
    glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
-   glutInitWindowSize (250, 250);
+   glutInitWindowSize (600, 400);
    glutInitWindowPosition (100, 100);
    glutCreateWindow ("Quad Test");
    init ();
@@ -37,15 +43,11 @@ void display(void)
 {
    // Limpar todos os pixels
    glClear (GL_COLOR_BUFFER_BIT);
-
    // Desenhar um polígono branco (retângulo)
-   glColor3f (0.0, 0.0, 0.0);
-   glBegin(GL_POLYGON);
-      glVertex3f (0.25, 0.25, 0.0);
-      glVertex3f (0.75, 0.25, 0.0);
-      glVertex3f (0.75, 0.75, 0.0);
-      glVertex3f (0.25, 0.75, 0.0);
-   glEnd();
+    ShapeFactory f;
+    Coordinate co1(0.25, 0.25, 0.0),co2(0.75, 0.75, 0.0), co3(0.25, 0.75, 0.0);
+    list<Coordinate> coordinates{co1,co2,co3};
+    f.drawTriangle(COLOR_RED, coordinates);
 
    glutSwapBuffers ();
 }

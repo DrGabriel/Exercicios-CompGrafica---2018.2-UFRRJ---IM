@@ -25,7 +25,7 @@
 			<Add directory="../shared" />
 			<Add directory="../shared/windows/include" />
 			<Add directory="../shared/windows/include/png" />
-			<Add directory="../shared/windows/include/zlib" />			
+			<Add directory="../shared/windows/include/zlib" />
 		</Compiler>
 		<Linker>
 			<Add library="libpng.a" />
@@ -38,6 +38,15 @@
 			<Add library="libglew32.dll.a" />
 			<Add directory="../shared/windows/lib" />
 		</Linker>
+		<Unit filename="Color.cpp" />
+		<Unit filename="Color.h" />
+		<Unit filename="Colors.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Coordinate.cpp" />
+		<Unit filename="Coordinate.h" />
+		<Unit filename="ShapeFactory.cpp" />
+		<Unit filename="ShapeFactory.h" />
 		<Unit filename="quad.cpp" />
 		<Extensions>
 			<code_completion />

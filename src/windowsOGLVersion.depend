@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1534200322 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\glctext.cpp
+	<stdio.h>
+	<string.h>
+	<GL/glut.h>
+	"glcText.h"
+
+1368290960 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\glut.h
+	"freeglut_std.h"
+
+1368290960 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1360379482 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\glctext.h
+
