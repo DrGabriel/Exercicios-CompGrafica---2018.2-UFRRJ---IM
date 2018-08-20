@@ -47,7 +47,7 @@
 		<Unit filename="Coordinate.h" />
 		<Unit filename="ShapeFactory.cpp" />
 		<Unit filename="ShapeFactory.h" />
-		<Unit filename="quad.cpp" />
+		<Unit filename="exercicio2.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

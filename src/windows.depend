@@ -14,7 +14,7 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1534696384 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quad.cpp
+1534720539 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quad.cpp
 	<stdio.h>
 	<GL/glut.h>
 	"ShapeFactory.h"
@@ -37,14 +37,14 @@
 
 1534615201 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapesfactory.c
 
-1534690149 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.h
+1534719977 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.h
 	<GL/glut.h>
 	<iostream>
 	<vector>
 	"Coordinate.h"
 	"Color.h"
 
-1534693091 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.cpp
+1534720329 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.cpp
 	"ShapeFactory.h"
 
 1534636990 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordenada2d.cpp
@@ -67,6 +67,16 @@
 1534638821 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.cpp
 	"Coordinate.h"
 
-1534638821 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\colors.h
+1534721284 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\colors.h
 	"Color.h"
+
+1534725753 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\exercicio2.cpp
+	<stdio.h>
+	<GL/glut.h>
+	"ShapeFactory.h"
+	"Coordinate.h"
+	"Colors.h"
+	<math.h>
+	<vector>
+	<iostream>
 

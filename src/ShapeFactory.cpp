@@ -15,7 +15,13 @@
    glEnd();
    glFlush();
 }
-
+void ShapeFactory::drawPoint(Color color, Coordinate& coordinate){
+    glBegin(GL_POINTS);
+        glColor3f (color.getRed(),color.getGreen(),color.getBlue());
+        glVertex3f (coordinate.getX(), coordinate.getY(), coordinate.getZ());
+    glEnd();
+    glFlush();
+}
 void ShapeFactory::drawLine(std::vector<Color> colors, std::vector<Coordinate>& coordinates){
     glBegin(GL_LINES);
         glColor3f (colors[0].getRed(),colors[0].getGreen(),colors[0].getBlue());

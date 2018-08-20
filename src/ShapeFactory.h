@@ -9,7 +9,7 @@ using namespace std;
 class ShapeFactory{
     public:
         void drawTriangle(std::vector<Color>, std::vector<Coordinate>&,bool);
-        void drawVertext(void);
+        void drawPoint(Color, Coordinate&);
         void drawLine(std::vector<Color>, std::vector<Coordinate>&);
         void drawXYAxis(std::vector<Color>);
 };
