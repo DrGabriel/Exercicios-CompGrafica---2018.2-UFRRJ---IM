@@ -52,33 +52,25 @@ void display(void)
 
    glPushMatrix();
 		glRotatef (shoulder, 0.0, 0.0, 1.0); // rotação inicial da base (ombro) do braço
-		glTranslatef (0.75, 0.0, 0.0); // Translada 1.0, pois o braço terá 2.0 de comprimento
+		glTranslatef (1.0, 0.0, 0.0); // Translada 1.0, pois o braço terá 2.0 de comprimento
 		glPushMatrix();
-			glScalef (1.5, 0.5, 0.5);
+			glScalef (2.0, 0.5, 0.5);
 			glutSolidCube (1.0);
 		glPopMatrix();
 
-		glTranslatef (0.75, 0.0, 0.0); // origem posicionada no cotovelo
+		glTranslatef (1.0, 0.0, 0.0); // origem posicionada no cotovelo
 		glRotatef (elbow, 0.0, 0.0, 1.0); // faz rotação em relação ao cotovelo
-		glTranslatef (0.75, 0.0, 0.0); // posiciona antebraço de tamanho 2 na posição correta
+		glTranslatef (1.0, 0.0, 0.0); // posiciona antebraço de tamanho 2 na posição correta
 		glPushMatrix();
-			glScalef (1.5, 0.5, 0.5);
+			glScalef (2.0, 0.5, 0.5);
 			glutSolidCube (1.0);
 		glPopMatrix();
 
-        glTranslatef (0.75, 0.0, 0.0); // origem posicionada no segmento
+        glTranslatef (1.0, 0.0, 0.0); // origem posicionada no segmento
         glRotatef (segmento, 0.0, 0.0, 1.0); // faz rotação em relação ao cotovelo
         glTranslatef (0.75, 0.0, 0.0); // posiciona antebraço de tamanho 2 na posição correta
         glPushMatrix();
             glScalef (1.5, 0.5, 0.5);
-            glutSolidCube (1.0);
-        glPopMatrix();
-        glColor3f(1.0f, 0.0f, 0.0f);
-        glTranslatef (1.0, 0.0, 0.0); // origem posicionada no segmento
-        glRotatef (-600.0, 0.0, 0.0, 1.0); // faz rotação em relação ao cotovelo
-        glTranslatef (0.0, 0.0, 0.0); // posiciona antebraço de tamanho 2 na posição correta
-        glPushMatrix();
-            glScalef (0.5, 0.5, 0.5);
             glutSolidCube (1.0);
         glPopMatrix();
    glPopMatrix(); // origem volta para o sistema de coordenadas original

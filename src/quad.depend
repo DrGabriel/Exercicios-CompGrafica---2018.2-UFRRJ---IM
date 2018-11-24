@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1534731945 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quad.cpp
+	<stdio.h>
+	<GL/glut.h>
+	"ShapeFactory.h"
+	"Coordinate.h"
+	"Colors.h"
+	<list>
+	<vector>
+	<iostream>
+
+1534731945 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.h
+	<GL/glut.h>
+	<iostream>
+	<vector>
+	"Coordinate.h"
+	"Color.h"
+
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.h
+
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\color.h
+
+1534731945 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\colors.h
+	"Color.h"
+
