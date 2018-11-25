@@ -14,7 +14,7 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1534720539 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quad.cpp
+1534731945 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quad.cpp
 	<stdio.h>
 	<GL/glut.h>
 	"ShapeFactory.h"
@@ -24,10 +24,10 @@
 	<vector>
 	<iostream>
 
-1534638821 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\glut.h
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\glut.h
 	"freeglut_std.h"
 
-1534638821 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\freeglut_std.h
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\shared\windows\include\gl\freeglut_std.h
 	<windows.h>
 	<OpenGL/gl.h>
 	<OpenGL/glu.h>
@@ -37,14 +37,14 @@
 
 1534615201 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapesfactory.c
 
-1534719977 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.h
+1534731945 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.h
 	<GL/glut.h>
 	<iostream>
 	<vector>
 	"Coordinate.h"
 	"Color.h"
 
-1534720329 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.cpp
+1534731945 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\shapefactory.cpp
 	"ShapeFactory.h"
 
 1534636990 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordenada2d.cpp
@@ -57,20 +57,20 @@
 
 1534638512 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\cor.h
 
-1534638821 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.h
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.h
 
-1534638821 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\color.h
+1534642421 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\color.h
 
-1534638821 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\color.cpp
+1534642421 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\color.cpp
 	"Color.h"
 
-1534638821 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.cpp
+1534642421 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\coordinate.cpp
 	"Coordinate.h"
 
-1534721284 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\colors.h
+1534731945 c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\colors.h
 	"Color.h"
 
-1534725753 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\exercicio2.cpp
+1534731945 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\exercicio2.cpp
 	<stdio.h>
 	<GL/glut.h>
 	"ShapeFactory.h"
@@ -79,4 +79,20 @@
 	<math.h>
 	<vector>
 	<iostream>
+
+1543096372 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\viewport.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1543098774 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\quadtransform.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+
+1543106929 source:c:\users\gabriel santos\documents\faculdade\ccomp ufrrj im\comp grafica\git\exercicios-compgrafica---2018.2-ufrrj---im\src\mousekeyboard.cpp
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
 
