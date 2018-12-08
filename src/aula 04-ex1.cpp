@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float shoulder = 0.0f, elbow = 0.0f, segmento = 0.0f;
+float shoulder = 0.0f, elbow = 0.0f, arm = 0.0f, claw = 0.0f;
 
 int selected = 1;
 
 void init(void)
 {
-	printf("Pressione as setas direita e esquerda para mover o braco.\n");
-	printf("Selecione as teclas 1 e 2 para escolher o segmento a ser movido.\n");
+	printf("Setas direita e esquerda movem o braco.\n");
+	printf("Teclas 1 e 2 para escolhem o segmento que sera movido.\n");
 	printf("Pressione ESC para sair.\n");
 
    glClearColor (0.0, 0.0, 0.0, 0.0);
    glShadeModel (GL_SMOOTH);
 
-   glEnable(GL_LIGHT0);                   // habilita luz 0
+   glEnable(GL_LIGHT0);                   
    glEnable(GL_COLOR_MATERIAL);           // Utiliza cor do objeto como material
    glColorMaterial(GL_FRONT, GL_DIFFUSE);
 
@@ -24,7 +24,7 @@ void init(void)
    glEnable(GL_CULL_FACE);                // Habilita Backface-Culling
 }
 
-void desenhaEixos()
+void eixos()
 {
 	glDisable(GL_LIGHTING);
    glBegin(GL_LINES);
@@ -39,40 +39,43 @@ void desenhaEixos()
 		glColor3f(0.0f, 0.0f, 1.0f);
 		glVertex3f(0.0f, 0.0f, 0.0f);
 		glVertex3f(0.0f, 0.0f, 10.0f);
-
    glEnd();
 	glEnable(GL_LIGHTING);
+}
+
+void braco () {
+   glRotatef (arm, 0.0, 0.0, 1.0); // rota√ß√£o inicial da base (ombro) do bra√ßo
+   glTranslatef (1.0, 0.0, 0.0); // Translada 1.0, pois o bra√ßo ter√° 2.0 de comprimento
+   glPushMatrix();
+      glScalef (2.0, 0.5, 0.5);
+      glutSolidCube (1.0);
+   glPopMatrix();
+
+   glTranslatef (1.0, 0.0, 0.0); // Translada 1.0, pois o bra√ßo ter√° 2.0 de comprimento
+   glRotatef (shoulder, 0.0, 0.0, 1.0); // rota√ß√£o inicial da base (ombro) do bra√ßo
+   glTranslatef (1.0, 0.0, 0.0); // Translada 1.0, pois o bra√ßo ter√° 2.0 de comprimento
+   glPushMatrix();
+      glScalef (2.0, 0.5, 0.5);
+      glutSolidCube (1.0);
+   glPopMatrix();
+
+   glTranslatef (1.0, 0.0, 0.0); // origem posicionada no cotovelo
+   glRotatef (elbow, 0.0, 0.0, 1.0); // faz rota√ß√£o em rela√ß√£o ao cotovelo
+   glTranslatef (1.0, 0.0, 0.0); // posiciona antebra√ßo de tamanho 2 na posi√ß√£o correta
+   glPushMatrix();
+      glScalef (2.0, 0.5, 0.5);
+      glutSolidCube (1.0);
+   glPopMatrix();
 }
 
 void display(void)
 {
    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-   desenhaEixos();
+   eixos();
 	glColor3f(1.0f, 1.0f, 0.0f);
 
    glPushMatrix();
-		glRotatef (shoulder, 0.0, 0.0, 1.0); // rotaÁ„o inicial da base (ombro) do braÁo
-		glTranslatef (1.0, 0.0, 0.0); // Translada 1.0, pois o braÁo ter· 2.0 de comprimento
-		glPushMatrix();
-			glScalef (2.0, 0.5, 0.5);
-			glutSolidCube (1.0);
-		glPopMatrix();
-
-		glTranslatef (1.0, 0.0, 0.0); // origem posicionada no cotovelo
-		glRotatef (elbow, 0.0, 0.0, 1.0); // faz rotaÁ„o em relaÁ„o ao cotovelo
-		glTranslatef (1.0, 0.0, 0.0); // posiciona antebraÁo de tamanho 2 na posiÁ„o correta
-		glPushMatrix();
-			glScalef (2.0, 0.5, 0.5);
-			glutSolidCube (1.0);
-		glPopMatrix();
-
-        glTranslatef (1.0, 0.0, 0.0); // origem posicionada no segmento
-        glRotatef (segmento, 0.0, 0.0, 1.0); // faz rotaÁ„o em relaÁ„o ao cotovelo
-        glTranslatef (0.75, 0.0, 0.0); // posiciona antebraÁo de tamanho 2 na posiÁ„o correta
-        glPushMatrix();
-            glScalef (1.5, 0.5, 0.5);
-            glutSolidCube (1.0);
-        glPopMatrix();
+      braco();
    glPopMatrix(); // origem volta para o sistema de coordenadas original
    glutSwapBuffers();
 }
@@ -101,8 +104,8 @@ void keyboard (unsigned char key, int x, int y)
 		selected = 2;
 	break;
    case '3':
-		selected = 3;
-	break;
+      selected = 3;
+   break;
    case 27:
       exit(0);
       break;
@@ -117,14 +120,14 @@ void specialKeys(int key, int x, int y)
    switch(key)
    {
       case GLUT_KEY_LEFT:
-			if(selected == 1) shoulder = ((int) shoulder + 5) % 360;
-			if(selected == 2) elbow = ((int) elbow + 5) % 360;
-			if(selected == 3) segmento = ((int) segmento + 5) % 360;
+         if(selected == 1) arm = ((int) arm + 5) % 360;
+			if(selected == 2) shoulder = ((int) shoulder + 5) % 360;
+			if(selected == 3) elbow = ((int) elbow + 5) % 360;
       break;
       case GLUT_KEY_RIGHT:
-			if(selected == 1) shoulder = ((int) shoulder - 5) % 360;
-			if(selected == 2) elbow = ((int) elbow - 5) % 360;
-			if(selected == 3) segmento = ((int) segmento - 5) % 360;
+         if(selected == 1) arm = ((int) arm - 5) % 360;
+			if(selected == 2) shoulder = ((int) shoulder - 5) % 360;
+			if(selected == 3) elbow = ((int) elbow - 5) % 360;
       break;
    }
    glutPostRedisplay();
